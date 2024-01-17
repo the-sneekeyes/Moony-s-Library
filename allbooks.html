@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>All Books</title>
+  <link rel="stylesheet" type="text/css" href="allbooksstyles.css">
+  <link rel="stylesheet" href="Res/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+        <a style="color: black; text-decoration: none; font-size: 22px; margin-top: -20px; padding: 40px;" href="home.html" >Home</a>
+        <a style="color: black; text-decoration: none; font-size: 22px; margin-top: -20px; padding: 40px;" href="allbooks.html" >All Books</a>
+        <div style="display: flex; flex-direction: column; margin-left: 100px; margin-right: 100px;">
+            <h1>Moony's Library</h1>
+            <p style="margin-top: -30px;" >A gift from your hubbie to keep your company</p>
+        </div>
+        <a style="color: black; text-decoration: none; font-size: 22px; margin-top: -20px; padding: 40px;" href="diary.html" >Our Diary</a>
+        <a style="color: black; text-decoration: none; font-size: 22px; margin-top: -20px; padding: 40px;" href="bday.html" >Message From Hobbie </a>
+
+    </div>
+
+
+</header>
+
+
+  <div style="display: flex; margin-top: 8%; flex-direction: column;">
+
+
+    <div class="controls-container">
+      <input type="text" id="searchInput" placeholder="Search by book name...">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="fiction">Fiction</option>
+        <option value="non-fiction">Non-Fiction</option>
+        <!-- Add other categories as needed -->
+      </select>
+      <select id="sortOptions">
+        <option value="title">Sort by Title</option>
+        <option value="author">Sort by Author</option>
+      </select>
+    </div>
+    
+
+    <p style="font-size: 30px; width: 90%; margin-left: 50px; padding: 10px; background-color: aliceblue; border-radius: 8px; ">Old School Romance(Classics)</p>
+
+    <div id="fictionBookList" style="margin-left: 10px; margin-right: 10px;" class="featured-books-container">
+      <!-- Fiction book sections will be populated dynamically -->
+      <!-- Example placeholder -->
+      <section class="featured-book" data-title="Fiction Book 1" data-author="Author A" data-category="fiction">
+        <div class="book-card">
+          <div class="book-front">
+            <img src="Res\images\teaspoonearthandsea.jpg" alt="Featured Book Cover">
+          </div>
+          <div class="book-back">
+            <h3>Fiction Book 1</h3>
+            <p>By Author A</p>
+            <p>Description of the book...</p>
+            <a href="read.html?pdf=Res\marline-destined-love.pdf">Read Online</a>
+            <a href="fiction_book1.pdf" download>Download PDF</a>
+          </div>
+        </div>
+      </section>
+      <section class="featured-book" data-title="Fiction Book 1" data-author="Author A" data-category="fiction">
+        <div class="book-card">
+          <div class="book-front">
+            <img src="Res\images\teaspoonearthandsea.jpg" alt="Featured Book Cover">
+          </div>
+          <div class="book-back">
+            <h3>Fiction Book 1</h3>
+            <p>By Author A</p>
+            <p>Description of the book...</p>
+            <a href="read.html?pdf=Res\marline-destined-love.pdf">Read Online</a>
+            <a href="fiction_book1.pdf" download>Download PDF</a>
+          </div>
+        </div>
+      </section>
+      <section class="featured-book" data-title="Fiction Book 1" data-author="Author A" data-category="fiction">
+        <div class="book-card">
+          <div class="book-front">
+            <img src="Res\images\teaspoonearthandsea.jpg" alt="Featured Book Cover">
+          </div>
+          <div class="book-back">
+            <h3>Fiction Book 1</h3>
+            <p>By Author A</p>
+            <p>Description of the book...</p>
+            <a href="read.html?pdf=Res\marline-destined-love.pdf">Read Online</a>
+            <a href="fiction_book1.pdf" download>Download PDF</a>
+          </div>
+        </div>
+      </section>
+      <section class="featured-book" data-title="Fiction Book 1" data-author="Author A" data-category="fiction">
+        <div class="book-card">
+          <div class="book-front">
+            <img src="Res\images\teaspoonearthandsea.jpg" alt="Featured Book Cover">
+          </div>
+          <div class="book-back">
+            <h3>Fiction Book 1</h3>
+            <p>By Author A</p>
+            <p>Description of the book...</p>
+            <a href="read.html?pdf=Res\marline-destined-love.pdf">Read Online</a>
+            <a href="fiction_book1.pdf" download>Download PDF</a>
+          </div>
+        </div>
+      </section>
+      <!-- Add more fiction book sections dynamically -->
+    </div>
+
+    <p style="font-size: 30px; width: 90%; margin-left: 50px; padding: 10px; background-color: aliceblue; border-radius: 8px; ">Adventure</p>
+
+    <div id="nonFictionBookList" style="margin-left: 10px; margin-right: 10px;" class="featured-books-container">
+      <!-- Non-Fiction book sections will be populated dynamically -->
+      <!-- Example placeholder -->
+      <section class="featured-book" data-title="Non-Fiction Book 1" data-author="Author B" data-category="non-fiction">
+        <div class="book-card">
+          <div class="book-front">
+            <img src="Res\images\teaspoonearthandsea.jpg" alt="Featured Book Cover">
+          </div>
+          <div class="book-back">
+            <h3>Non-Fiction Book 1</h3>
+            <p>By Author B</p>
+            <p>Description of the book...</p>
+            <a href="https://www.inkitt.com/stories/adventure/597256">Read Online</a>
+            <!-- <a href="nonfiction_book1.pdf" download>Download PDF</a> -->
+          </div>
+        </div>
+      </section>
+      <section class="featured-book" data-title="Non-Fiction Book 1" data-author="Author B" data-category="non-fiction">
+        <div class="book-card">
+          <div class="book-front">
+            <img src="Res\images\teaspoonearthandsea.jpg" alt="Featured Book Cover">
+          </div>
+          <div class="book-back">
+            <h3>Non-Fiction Book 1</h3>
+            <p>By Author B</p>
+            <p>Description of the book...</p>
+            <a href="https://www.inkitt.com/stories/adventure/362514">Read Online</a>
+            <!-- <a href="nonfiction_book1.pdf" download>Download PDF</a> -->
+          </div>
+        </div>
+      </section>
+      <section class="featured-book" data-title="Non-Fiction Book 1" data-author="Author B" data-category="non-fiction">
+        <div class="book-card">
+          <div class="book-front">
+            <img src="Res\images\teaspoonearthandsea.jpg" alt="Featured Book Cover">
+          </div>
+          <div class="book-back">
+            <h3>Non-Fiction Book 1</h3>
+            <p>By Author B</p>
+            <p>Description of the book...</p>
+            <a href="https://www.inkitt.com/stories/adventure/700257">Read Online</a>
+            <!-- <a href="nonfiction_book1.pdf" download>Download PDF</a> -->
+          </div>
+        </div>
+      </section>
+      <section class="featured-book" data-title="Non-Fiction Book 1" data-author="Author B" data-category="non-fiction">
+        <div class="book-card">
+          <div class="book-front">
+            <img src="Res\images\teaspoonearthandsea.jpg" alt="Featured Book Cover">
+          </div>
+          <div class="book-back">
+            <h3>Non-Fiction Book 1</h3>
+            <p>By Author B</p>
+            <p>Description of the book...</p>
+            <a href="https://www.inkitt.com/stories/adventure/100792">Read Online</a>
+            <!-- <a href="nonfiction_book1.pdf" download>Download PDF</a> -->
+          </div>
+        </div>
+      </section>
+      
+    </div>
+
+    <div id="nonFictionBookList" style="margin-left: 10px; margin-right: 10px;" class="featured-books-container">
+
+      <section class="featured-book" data-title="Non-Fiction Book 1" data-author="Author B" data-category="non-fiction">
+        <div class="book-card">
+          <div class="book-front">
+            <img src="Res\images\teaspoonearthandsea.jpg" alt="Featured Book Cover">
+          </div>
+          <div class="book-back">
+            <h3>Non-Fiction Book 1</h3>
+            <p>By Author B</p>
+            <p>Description of the book...</p>
+            <a href="https://www.inkitt.com/stories/adventure/917404">Read Online</a>
+            <!-- <a href="nonfiction_book1.pdf" download>Download PDF</a> -->
+          </div>
+        </div>
+      </section>
+      <section class="featured-book" data-title="Non-Fiction Book 1" data-author="Author B" data-category="non-fiction">
+        <div class="book-card">
+          <div class="book-front">
+            <img src="Res\images\teaspoonearthandsea.jpg" alt="Featured Book Cover">
+          </div>
+          <div class="book-back">
+            <h3>Non-Fiction Book 1</h3>
+            <p>By Author B</p>
+            <p>Description of the book...</p>
+            <a href="https://www.inkitt.com/stories/adventure/1033659">Read Online</a>
+            <!-- <a href="nonfiction_book1.pdf" download>Download PDF</a> -->
+          </div>
+        </div>
+      </section>
+      <section class="featured-book" data-title="Non-Fiction Book 1" data-author="Author B" data-category="non-fiction">
+        <div class="book-card">
+          <div class="book-front">
+            <img src="Res\images\teaspoonearthandsea.jpg" alt="Featured Book Cover">
+          </div>
+          <div class="book-back">
+            <h3>Non-Fiction Book 1</h3>
+            <p>By Author B</p>
+            <p>Description of the book...</p>
+            <a href="https://www.inkitt.com/stories/adventure/591864">Read Online</a>
+            <!-- <a href="nonfiction_book1.pdf" download>Download PDF</a> -->
+          </div>
+        </div>
+      </section>
+      <section class="featured-book" data-title="Non-Fiction Book 1" data-author="Author B" data-category="non-fiction">
+        <div class="book-card">
+          <div class="book-front">
+            <img src="Res\images\teaspoonearthandsea.jpg" alt="Featured Book Cover">
+          </div>
+          <div class="book-back">
+            <h3>Non-Fiction Book 1</h3>
+            <p>By Author B</p>
+            <p>Description of the book...</p>
+            <a href="https://www.inkitt.com/stories/adventure/280641">Read Online</a>
+            <!-- <a href="nonfiction_book1.pdf" download>Download PDF</a> -->
+          </div>
+        </div>
+      </section>
+    </div>
+    <p style="font-size: 30px; width: 90%; margin-left: 50px; padding: 10px; background-color: aliceblue; border-radius: 8px; ">Adventure</p>
+
+  </div>
+
+  <script src="allbooksscript.js"></script>
+</body>
+</html>
+
+
+<!-- 
+  Adventure + Romance
+  https://www.inkitt.com/stories/adventure/597256
+  https://www.inkitt.com/stories/adventure/362514
+  https://www.inkitt.com/stories/adventure/700257
+  https://www.inkitt.com/stories/adventure/100792
+  https://www.inkitt.com/stories/adventure/917404
+  https://www.inkitt.com/stories/adventure/1033659
+  https://www.inkitt.com/stories/adventure/591864
+  https://www.inkitt.com/stories/adventure/280641
+ -->
+
+ <!-- 
+  
+  -->

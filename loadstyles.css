@@ -1,0 +1,58 @@
+/* Styles for the loading screen */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .loading-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  .logo img {
+    max-width: 800px;
+    margin-bottom: 40px;
+    /* Add styles for the logo container as needed */
+  }
+  
+  .loading-bar {
+    width: 50%;
+    height: 20px;
+    border: 5px solid black;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative; /* Added position relative */
+    padding: 5px;
+  }
+  
+  .progress {
+    width: 0;
+    height: 100%;
+    background-color: black;
+    /* Block-style loading animation */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    background-image: linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 0.3) 50%);
+    background-size: 20px 100%;
+    animation: progressAnimation 2s linear infinite;
+  }
+  
+  @keyframes progressAnimation {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 20px 0;
+    }
+  }
+  

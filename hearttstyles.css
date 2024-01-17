@@ -1,0 +1,85 @@
+@keyframes glow {
+    0% {
+      filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.752));
+    }
+    50% {
+      filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.752));
+    }
+    100% {
+      filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.752));
+    }
+  }
+  
+  @keyframes beat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  .heart {
+    animation: glow 2s ease-in-out infinite, beat 1s ease-in-out infinite;
+  }
+
+
+  /* Styles for the loading screen */
+body {
+  margin: 0;
+  font-family: 'Sail', sans-serif;
+  background-color: #F7C5CC;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #F7C5CC;
+}
+
+.logo img {
+  max-width: 800px;
+  margin-bottom: 40px;
+  /* Add styles for the logo container as needed */
+}
+
+.loading-bar {
+  width: 50%;
+  height: 20px;
+  border: 5px solid #fff;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative; /* Added position relative */
+  padding: 5px;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background-color: #CD313E;
+  /* Block-style loading animation */
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  background-image: linear-gradient(to right, transparent 50%, #CD313E 50%);
+  background-size: 20px 100%;
+  animation: progressAnimation 2s linear infinite;
+}
+
+@keyframes progressAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 20px 0;
+  }
+}
+
+  

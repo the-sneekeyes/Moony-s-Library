@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading Screen Example</title>
+  <link rel="stylesheet" type="text/css" href="loadstyles.css">
+</head>
+<body>
+  <div class="loading-screen">
+    <div class="logo">
+      <!-- Your logo here -->
+      <img src="Res\logo.png" alt="Logo">
+    </div>
+    <div class="loading-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+
+  <script>
+    // Simulating loading progress
+    function simulateLoading() {
+      let progressBar = document.querySelector('.progress');
+      let width = 1;
+      let loading = setInterval(frame, 60);
+
+      function frame() {
+        if (width >= 100) {
+          clearInterval(loading);
+          // Redirect to your webpage after loading completes
+          window.location.href = 'home.html';
+        } else {
+          width++;
+          progressBar.style.width = width + '%';
+        }
+      }
+    }
+
+    // Call the function to start loading simulation
+    simulateLoading();
+  </script>
+</body>
+</html>
